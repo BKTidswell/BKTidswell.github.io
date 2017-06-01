@@ -1,0 +1,79 @@
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['gantt']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function daysToMilliseconds(days) {
+      return days * 24 * 60 * 60 * 1000;
+    }
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Task ID');
+      data.addColumn('string', 'Task Name');
+      data.addColumn('string', 'Resource');
+      data.addColumn('date', 'Start Date');
+      data.addColumn('date', 'End Date');
+      data.addColumn('number', 'Duration');
+      data.addColumn('number', 'Percent Complete');
+      data.addColumn('string', 'Dependencies');
+
+      data.addRows([
+        ["a","Determine G to P Scheme", "Everyone",
+          new Date(2017, 4, 31), new Date(2017, 5, 8), null, 90, null],
+        ["b","Determine Experimental Design", "Everyone",
+          new Date(2017, 4, 31), new Date(2017, 5, 14), null, 0, null],
+        ["z","Examine PyroSim", "Ben",
+            new Date(2017, 5, 7), new Date(2017, 5, 10), null, 0, "a"],
+        ["c","Arduino Code", "Ben",
+          new Date(2017, 5, 7), new Date(2017, 5, 23), null, 0, "a"],
+        ["d","Unity Code", "Nick",
+          new Date(2017, 5, 7), new Date(2017, 5, 19), null, 0, "a"],
+        ["e","Build Physical Roomba", "Nick",
+          new Date(2017, 5, 7), new Date(2017, 5, 19), null, 0, "a"],
+        ["f","Set up World", "Theresa and Meghan",
+          new Date(2017, 5, 14), new Date(2017, 5, 19), null, 0, "b"],
+        ["g","Write Methods", "Meghan",
+          new Date(2017, 5, 14), new Date(2017, 7, 3), null, 0, "b"],
+        ["h","Write Intro", "Meghan",
+          new Date(2017, 5, 14), new Date(2017, 7, 3), null, 0, "b"],
+        ["i","Test Sensors and Code", "Nick, Ben, Theresa, Gabe",
+          new Date(2017, 5, 23), new Date(2017, 5, 30), null, 0, "c,d,e,f"],
+        ["j","Run Experiment", "Meghan, Ben, Theresa, Gabe",
+          new Date(2017, 5, 30), new Date(2017, 6, 7), null, 0, "i, z"],
+        ["k","Analyze Data", "Meghan, Ben, Theresa, Gabe",
+          new Date(2017, 6, 7), new Date(2017, 6, 14), null, 0, "j"],
+        ["l","Write Results", "Everyone",
+          new Date(2017, 6, 14), new Date(2017, 7, 3), null, 0, "k"],
+        ["m","Write Discussion", "Everyone",
+          new Date(2017, 6, 14), new Date(2017, 7, 3), null, 0, "k"],
+        ["n","Write Abstract", "Everyone",
+          new Date(2017, 6, 14), new Date(2017, 7, 3), null, 0, "k"],
+      ]);
+
+      var options = {
+        height: 800,
+        gantt: {
+            criticalPathEnabled: false,
+            arrow: {
+              angle: 95,
+              width: 5,
+              color: 'black',
+              radius: 10
+            }
+          }
+      };
+
+      var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="chart_div"></div>
+</body>
+</html>
