@@ -31,7 +31,7 @@ void draw(){
     for (int y = 0; y < sy; y++) { 
       if ((world[x][y][1] == 1) || (world[x][y][1] == 0 && world[x][y][0] == 1)) { 
         world[x][y][0] = 1;
-        stroke(world[x][y][2],360,360); 
+        stroke(world[x][y][2],180,360); 
         point(x, y); 
       } 
       if (world[x][y][1] == -1){ 
