@@ -1,79 +1,18 @@
+<!DOCTYPE html>
+
 <html>
-<head>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['gantt']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function daysToMilliseconds(days) {
-      return days * 24 * 60 * 60 * 1000;
-    }
-
-    function drawChart() {
-
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Task ID');
-      data.addColumn('string', 'Task Name');
-      data.addColumn('string', 'Resource');
-      data.addColumn('date', 'Start Date');
-      data.addColumn('date', 'End Date');
-      data.addColumn('number', 'Duration');
-      data.addColumn('number', 'Percent Complete');
-      data.addColumn('string', 'Dependencies');
-
-      data.addRows([
-        ["a","Determine G to P Scheme", "Everyone",
-          new Date(2017, 4, 31), null, daysToMilliseconds(7), 90, null],
-        ["b","Determine Experimental Design", "Everyone",
-          new Date(2017, 4, 31), null, daysToMilliseconds(14), 0, null],
-        ["z","Examine PyroSim", "Ben, Gabe",
-          null, null, daysToMilliseconds(5), 0, "a"],
-        ["c","Arduino Code", "Ben",
-          null, null, daysToMilliseconds(16), 0, "a"],
-        ["d","Unity Code", "Nick",
-          new Date(2017, 5, 2), null, daysToMilliseconds(4), 95, "a"],
-        ["e","Build Physical Roomba", "Nick",
-          new Date(2017, 5, 5), null, daysToMilliseconds(7), 25, "a"],
-        ["f","Set up World", "Theresa and Meghan",
-          null, null, daysToMilliseconds(5), 0, "b"],
-        ["g","Write Methods", "Meghan",
-          null, null, daysToMilliseconds(50), 0, "b"],
-        ["h","Write Intro", "Meghan",
-          null, null, daysToMilliseconds(50), 0, "b"],
-        ["i","Test Sensors and Code", "Nick, Ben, Theresa, Gabe",
-          null, null, daysToMilliseconds(7), 0, "c,d,e,f"],
-        ["j","Run Experiment", "Meghan, Ben, Theresa, Gabe",
-          null, null, daysToMilliseconds(7), 0, "i, z"],
-        ["k","Analyze Data", "Meghan, Ben, Theresa, Gabe",
-          null, null, daysToMilliseconds(7), 0, "j"],
-        ["l","Write Results", "Everyone",
-          null, null, daysToMilliseconds(20), 0, "k"],
-        ["m","Write Discussion", "Everyone",
-          null, null, daysToMilliseconds(20), 0, "k"],
-        ["n","Write Abstract", "Everyone",
-          null, null, daysToMilliseconds(20), 0, "k"]
-      ]);
-
-      var options = {
-        height: 800,
-        gantt: {
-            criticalPathEnabled: false,
-            arrow: {
-              angle: 95,
-              width: 5,
-              color: 'black',
-              radius: 10
-            }
-          }
-      };
-
-      var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
-
-      chart.draw(data, options);
-    }
-  </script>
-</head>
-<body>
-  <div id="chart_div"></div>
-</body>
+  	<head>
+  		<script src="processing.js"></script>
+  		<link rel="stylesheet" type="text/css" href="style.css">
+  		<link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+  		<title>Ben Tidswell</title>
+	</head>
+	<body>
+ 		<p><h1>Ben Tidswell</h1><p>
+ 		<div id="links">
+ 			<canvas data-processing-sources="life.pde"></canvas></canvas>
+ 			<a href="https://github.com/BKTidswell">Github</a> |
+ 			<a href="https://www.linkedin.com/in/ben-tidswell-048673113/">Linkedin</a>
+ 		</div>
+	</body>
 </html>
