@@ -1,0 +1,64 @@
+canvas {
+	outline: 0px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+h1 {
+	margin: auto;
+	font-size: 400%;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    font-family: 'Antic Slab', serif;
+    text-align: center;
+    color: #000000;
+}
+
+#links {
+	margin: auto;
+	font-size: 200%;
+    width: 50%;
+    font-family: 'Antic Slab', serif;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    font-size: 100%;
+}
+
+div.gallery {
+    margin-top: 50px;
+    margin-left: 150px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    width: 150px;
+    height: 180px;
+    background: #FFFFFF;
+}
+
+div.gallery:hover {
+    border: 1px solid #000000;
+}
+
+div.gallery img {
+    width:  150px;
+    height: auto;
+}
+
+.crop {
+ height: 150px;
+ width: 150px;
+ overflow: hidden;
+}
+
+div.desc {
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Antic Slab', serif;
+}
+
