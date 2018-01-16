@@ -11,21 +11,18 @@ canvas {
 h1 {
 	margin: auto;
 	font-size: 400%;
-    padding-top: 100px;
-    padding-bottom: 75px;
+    padding-top: 75px;
+    padding-bottom: 50px;
     font-family: 'Antic Slab', serif;
     text-align: center;
-    color: #FFFFFF;
+    color: white;
 }
 
-#links {
+a {
 	margin: auto;
 	font-size: 200%;
     width: 50%;
     font-family: 'Antic Slab', serif;
     text-align: center;
-}
-
-a {
-    color: red;
+    color: white;
 }
