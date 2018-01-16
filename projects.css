@@ -18,29 +18,25 @@ h1 {
     color: #000000;
 }
 
-#links {
-	margin: auto;
-	font-size: 200%;
+a {
+    margin: auto;
+    font-size: 200%;
     width: 50%;
     font-family: 'Antic Slab', serif;
     text-align: center;
-}
-
-a {
     color: #000000;
     font-size: 100%;
 }
 
 div.gallery {
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-left: 200px;
+    margin-top: 30px;
+    margin-left: 112px;
     border: 1px solid #CCCCCC;
     float: left;
-    width: 150px;
-    height: 180px;
+    width: 100px;
+    height: 150px;
     background: #FFFFFF;
-    border-radius: 100px;
+    border-radius: 20%;
 }
 
 div.gallery:hover {
@@ -48,19 +44,21 @@ div.gallery:hover {
 }
 
 div.gallery img {
-    width:  150px;
+    width:  100px;
+    padding-bottom: 10px;
     height: auto;
+    border-radius: 20%;
 }
 
 .crop {
- height: 150px;
- width: 150px;
+ height: 100px;
+ width: 100px;
  overflow: hidden;
 }
 
 div.desc {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: 'Antic Slab', serif;
 }
 

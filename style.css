@@ -11,9 +11,10 @@ canvas {
 h1 {
 	margin: auto;
 	font-size: 400%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: 'Antic Slab', serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    /*font-family: 'Antic Slab', serif;*/
+    font-family: 'Sorts Mill Goudy', serif;
     text-align: center;
     color: white;
 }
@@ -24,8 +25,11 @@ h1 {
     width: 50%;
     font-family: 'Antic Slab', serif;
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
 a {
     color: white;
+    text-decoration: none;
 }

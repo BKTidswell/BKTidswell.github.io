@@ -1,14 +1,15 @@
 
 int iters = 7;
 float phi = (sqrt(5)+1)/2;
+maxDepth = 8;
 
 void setup(){
 	size(screen.width, screen.height);
 	w = screen.width
 	h = screen.height
 	smooth();
-	background(#000000);
-	stroke(#FFFFFF,9)
+	background(#03264A);
+	stroke(#C04100,15)
 	strokeWeight(1);
 	noFill();
 }
@@ -31,7 +32,7 @@ void draw(){
 }
 
 void drawSpiral(int startX, int startY, int startSize, int depth){
-	if(depth < 6){
+	if(depth < maxDepth){
 		int piStart;
 		int piEnd;
 
@@ -56,7 +57,11 @@ void drawSpiral(int startX, int startY, int startSize, int depth){
 			piStart = PI*(0.5*(i+2));
 			piEnd = PI*(0.5*(i+3));
 
+			if (depth>2) {
+				stroke(#3FA800,15);
+			}
 			arc(0,0,size*2,size*2,piStart,piEnd);
+			stroke(#C04100,15);
 
 			if(i==0){
 				pushMatrix();
