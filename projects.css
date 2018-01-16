@@ -33,12 +33,14 @@ a {
 
 div.gallery {
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 100px;
+    margin-left: 1000px;
     border: 1px solid #CCCCCC;
     float: left;
     width: 150px;
     height: 180px;
     background: #FFFFFF;
+    border-radius: 100px;
 }
 
 div.gallery:hover {
