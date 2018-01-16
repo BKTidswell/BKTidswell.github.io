@@ -1,7 +1,11 @@
 
 int iters = 7;
 float phi = (sqrt(5)+1)/2;
-maxDepth = 8;
+maxDepth = 7;
+
+a = 75;
+treeColor = #C04100;
+leafColor = #3FA800;
 
 void setup(){
 	size(screen.width, screen.height);
@@ -9,17 +13,33 @@ void setup(){
 	h = screen.height
 	smooth();
 	background(#03264A);
-	stroke(#C04100,15)
+	stroke(treeColor,a)
 	strokeWeight(1);
 	noFill();
 }
 
 void draw(){
-	line(w/2,h,w/2,h*0.9)
+	//line(w/2,h,w/2,h*0.9)
 
-	translate(w/2-200,h*0.9);
-	//translate(w-(w/10),h+(h/5));
-	//rotate(2*PI-(PI/4))
+	//translate(w/2-200,h*0.9);
+	
+	line(w,h,w*0.939,h*0.92);
+	pushMatrix();
+	translate(w*0.83,h*1.1);
+	rotate(2*PI-(PI/4))
+
+	pushMatrix();
+	scale(-1,1);
+	drawSpiral(0,0,200,0);
+	popMatrix();
+
+	translate(400,0);
+	drawSpiral(0,0,200,0);
+	popMatrix();
+
+	line(0,h,w*0.065,h*0.925);
+	translate(-w*0.045,h*0.75);
+	rotate(PI*0.25);
 
 	pushMatrix();
 	scale(-1,1);
@@ -58,10 +78,10 @@ void drawSpiral(int startX, int startY, int startSize, int depth){
 			piEnd = PI*(0.5*(i+3));
 
 			if (depth>2) {
-				stroke(#3FA800,15);
+				stroke(leafColor,a);
 			}
 			arc(0,0,size*2,size*2,piStart,piEnd);
-			stroke(#C04100,15);
+			stroke(treeColor,a);
 
 			if(i==0){
 				pushMatrix();
@@ -69,6 +89,13 @@ void drawSpiral(int startX, int startY, int startSize, int depth){
 				translate(size/2,-size*1.35)
 				rotate(PI*1.75);
 				drawSpiral(0,0,startSize/2,depth+1);
+				popMatrix();
+
+				pushMatrix();
+				scale(-1,1);
+				translate(-startSize/1.85,-startSize*1.25)
+				rotate(6.5*PI/5);
+				drawSpiral(0,0,startSize/2.5,depth+1);
 				popMatrix();
 			}
 			if(i==1){
@@ -79,14 +106,14 @@ void drawSpiral(int startX, int startY, int startSize, int depth){
 				drawSpiral(0,0,size/2,depth+2);
 				popMatrix();
 			}
-			if(i==3){
-				pushMatrix();
-				translate(-size,size*1.1);
-				rotate(2*PI-(PI/3));
-				scale(-1,1);
-				drawSpiral(0,0,size/2,depth+3);
-				popMatrix();
-			}
+			// if(i==3){
+			// 	pushMatrix();
+			// 	translate(-size,size*1.1);
+			// 	rotate(2*PI-(PI/3));
+			// 	scale(-1,1);
+			// 	drawSpiral(0,0,size/2,depth+3);
+			// 	popMatrix();
+			// }
 		}
 	}
 }

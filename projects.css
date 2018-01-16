@@ -8,16 +8,6 @@ canvas {
 	z-index: -1;
 }
 
-h1 {
-	margin: auto;
-	font-size: 400%;
-    padding-top: 100px;
-    padding-bottom: 75px;
-    font-family: 'Antic Slab', serif;
-    text-align: center;
-    color: #000000;
-}
-
 a {
     margin: auto;
     font-size: 200%;
@@ -28,9 +18,16 @@ a {
     font-size: 100%;
 }
 
+table, th, td {
+    margin: auto;
+    width:200px;
+}
+
 div.gallery {
-    margin-top: 30px;
-    margin-left: 112px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    margin-right: 30px;
+    margin-left: 30px;
     border: 1px solid #CCCCCC;
     float: left;
     width: 100px;
