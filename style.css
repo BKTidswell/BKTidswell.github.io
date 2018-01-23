@@ -19,6 +19,39 @@ h1 {
     color: white;
 }
 
+h2 {
+    margin: auto;
+    font-size: 300%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /*font-family: 'Antic Slab', serif;*/
+    font-family: 'Sorts Mill Goudy', serif;
+    text-align: center;
+    color: white;
+}
+
+p {
+    margin: auto;
+    font-size: 110%;
+    /*font-family: 'Antic Slab', serif;*/
+    font-family: 'Sorts Mill Goudy', serif;
+    color: white;
+}
+
+div.para{
+    text-align: left;
+    margin: auto;
+    width: 45%;
+    text-indent: 5%;
+}
+
+div.back{
+    font-size: 200%;
+    margin: auto;
+    padding-top: 50px;
+    width: 10%;
+}
+
 #links {
 	margin: auto;
 	font-size: 200%;
