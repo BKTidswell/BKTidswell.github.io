@@ -34,7 +34,7 @@ url: https://bktidswell.github.io  # the base hostname and protocol for your sit
 
 
 # Build settings
-theme: jekyll-theme-architect
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
