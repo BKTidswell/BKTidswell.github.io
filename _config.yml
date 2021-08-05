@@ -34,9 +34,10 @@ url: https://bktidswell.github.io  # the base hostname and protocol for your sit
 
 
 # Build settings
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
