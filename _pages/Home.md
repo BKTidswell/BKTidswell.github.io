@@ -3,7 +3,7 @@ layout: splash
 permalink: /home/
 title: "Home"
 header:
-  image: /assets/images/danios.jpg
+  image: /assets/images/bio-photo.jpg
   caption: "Picture of Giant Danios"
 ---
 
