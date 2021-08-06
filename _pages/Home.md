@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /home
 title: "Home"
 header:
   image: /assets/images/danios.jpg
