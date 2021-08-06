@@ -1,5 +1,6 @@
 ---
-permalink: /home
+layout: splash
+permalink: /home/
 title: "Home"
 header:
   image: /assets/images/danios.jpg
