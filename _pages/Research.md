@@ -1,5 +1,6 @@
 ---
 permalink: /research/
+search: true
 title: "Research"
 header:
   image: /assets/images/danios.jpg

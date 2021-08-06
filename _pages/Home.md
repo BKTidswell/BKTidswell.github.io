@@ -1,6 +1,6 @@
 ---
 permalink: /
-hidden: true
+search: true
 title: "Home"
 header:
   image: /assets/images/danios.jpg
