@@ -1,13 +1,12 @@
 ---
 permalink: /research/
-search: true
 title: "Research"
 header:
   image: /assets/images/danios.jpg
 ---
 
-**Fish Schooling**
+## Fish Schooling
 
-**Fish Education**
+## Fish Education
 
-**Soft Robotics**
+## Soft Robotics  
