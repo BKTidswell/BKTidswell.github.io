@@ -1,4 +1,5 @@
 ---
+layout: splash
 permalink: /research/
 title: "Research"
 header:
