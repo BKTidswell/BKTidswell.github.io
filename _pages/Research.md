@@ -10,7 +10,7 @@ feature_row:
     alt: "Zebrafish"
     title: "Fish Schooling"
     url: "/schooling/"
-  - image_path: /assets/images/danios.jpg
+  - image_path: /assets/images/BMoS.jpeg
     alt: "fully responsive"
     title: "Responsive layouts"
     url: "/design-a-fish/"
