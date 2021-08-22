@@ -6,7 +6,7 @@ header:
   image: /assets/images/danios.jpg
 
 feature_row:
-  - image_path: /assets/images/zebrafish.jpg
+  - image_path: /assets/images/zebrafish.JPG
     alt: "Zebrafish"
     title: "Fish Schooling"
     url: "/schooling/"
@@ -14,7 +14,7 @@ feature_row:
     alt: "fully responsive"
     title: "Responsive layouts"
     url: "/design-a-fish/"
-  - image_path: /assets/images/monolith2.jpeg
+  - image_path: /assets/images/monolith2.PNG
     alt: "MONOLITh"
     title: "Soft Robotics"
     url: "/monolith/"
