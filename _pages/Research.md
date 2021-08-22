@@ -12,7 +12,7 @@ feature_row:
     url: "/schooling/"
   - image_path: /assets/images/BMoS.jpeg
     alt: "fully responsive"
-    title: "Responsive layouts"
+    title: "Science Outreach"
     url: "/design-a-fish/"
   - image_path: /assets/images/monolith2.PNG
     alt: "MONOLITh"
