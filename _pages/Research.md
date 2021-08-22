@@ -17,7 +17,7 @@ feature_row:
   - image_path: /assets/images/danios.jpg
     alt: "100% free"
     title: "100% free"
-    url: "/monolith3/"
+    url: "/monolith/"
 ---
 
 <figure class="third">
