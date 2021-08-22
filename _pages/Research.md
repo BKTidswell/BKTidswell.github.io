@@ -6,24 +6,18 @@ header:
   image: /assets/images/danios.jpg
 
 feature_row:
-  - image_path: /assets/images/danios.jpg
-    alt: "customizable"
-    title: "Super customizable"
+  - image_path: /assets/images/zebrafish.jpg
+    alt: "Zebrafish"
+    title: "Fish Schooling"
     url: "/schooling/"
   - image_path: /assets/images/danios.jpg
     alt: "fully responsive"
     title: "Responsive layouts"
     url: "/design-a-fish/"
-  - image_path: /assets/images/danios.jpg
-    alt: "100% free"
-    title: "100% free"
+  - image_path: /assets/images/monolith2.jpeg
+    alt: "MONOLITh"
+    title: "Soft Robotics"
     url: "/monolith/"
 ---
-
-<figure class="third">
-    <a href="/schooling/"><img src="/assets/images/danios.jpg"></a>
-    <a href="/design-a-fish/"><img src="/assets/images/danios.jpg"></a>
-    <a href="/monolith/"><img src="/assets/images/monolith.jpeg"></a>
-</figure>
 
 {% include feature_row %}
