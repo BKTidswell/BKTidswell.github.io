@@ -5,6 +5,13 @@ header:
   image: /assets/images/danios.jpg
 ---
 
+<figure class="half">
+    <a href="/home/"><img src="/assets/images/danios.jpg"></a>
+    <a href="/home/"><img src="/assets/images/danios.jpg"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+</figure>
+
+
 ## Fish Schooling
 
 Fish and other organisms move together in coordinated groups to defend against predators, give them allies to help gather food, and lessen the metabolic costs of transportation. Whether they are in a herd, flock, or school, animals form and maintain their groupings using multiple sensory modalities. In the lab, animal groups are often studied in well-lit, open environments, when their senses receive good information. But in the natural environment, sensing is often limited. For example, fish school in darkness, flow, or with damaged lateral lines, conditions that limit the information they can gain from their senses. 
