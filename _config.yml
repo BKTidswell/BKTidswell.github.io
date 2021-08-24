@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Ben Tidswell"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "PhD candidate in Eric Tytell’s lab at Tufts University studying fish schooling in Giant Danios."
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
