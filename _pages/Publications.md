@@ -7,6 +7,8 @@ header:
 
 ## Publications
 
+Tidswell, B. K., Veliko-Shapko, A., & Tytell, E. D. (2024). The role of vision and lateral line sensing for schooling in giant danios ( Devario aequipinnatus ). Journal of Experimental Biology, 227(10), jeb246887. https://doi.org/10.1242/jeb.246887
+
 Scibelli, A. E., Donatelli, C. M., Tidswell, B. K., Payton, M. R., Tytell, E. D., & Trimmer, B. A. (2022). MONOLITh: A soft non-pneumatic foam robot with a functional mesh skin for use in delicate environments. *Advanced Robotics, 1–13.* https://doi.org/10.1080/01691864.2022.2029764
 
 ## Conferences
